@@ -1,0 +1,303 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("/src/assets/fonts/PublicSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+body {
+  font-family: "PublicSans", sans-serif;
+}
+
+:root {
+  --bg-white: #ffffff;
+  /* faq */
+  --bg-gray-2: #d1d2e0;
+  --bg-blue-5: #3B82F6;
+  --bg-gray-1: #f3f4f6;
+  --bg-gray-5: #1f2937;
+  --bg-red: #b91c1c;
+  --bg-red-2: #ef4444;
+  --bg-purple: #e9d5ff;
+  --bg-green: #bbf7d0;
+  --bg-red-3: #fecaca;
+  --bg-yellow-1: #FEF9C3;
+  --bg-yellow: #EAB308;
+  --bg-green-1: #DCFCE7;
+  --bg-blue-1: #DBEAFE;
+  /* --bg-yellow: #EAB308; */
+
+  /* Chnages Done */
+
+  --bg-buttongray-hover: #f3f4f6;
+  --bg-buttonred-hover: #e80c0c;
+  --text-white-hover: #ffffff;
+  --text-black-hover: #000000;
+  --text-red-hover: #f87171;
+  --text-red-2-hover: #b91c1c;
+
+  --text-purple-hover: #7e22ce;
+  --text-green-hover: #15803d;
+
+
+  --text-gray: #4b5563;
+  --text-gray-2: #9ca3af;
+  --text-black: #000000;
+  --text-red: #c10007;
+  --text-purple: #9C27B0;
+  --text-white: #ffffff;
+  --text-yellow: #EAB308;
+  --text-green: #15803d;
+  --text-blue: #1D4ED8;
+  --text-pink: #ec4899;
+  --border-white: #ffffff;
+  --border-black: #000000;
+  --border-red: #c10007;
+  --border-gray: #d1d5db;
+}
+
+/* Changes Done */
+
+.hover\:bg-buttonred:hover {
+  background-color: var(--bg-buttonred-hover);
+}
+.hover\:bg-buttongray:hover {
+  background-color: var(--bg-buttongray-hover);
+}
+.hover\:text-white:hover {
+  color: var(--text-white-hover);
+}
+.hover\:text-black:hover {
+  color: var(--text-black-hover);
+}
+.hover\:text-purple:hover {
+  color: var(--text-purple-hover);
+}
+.hover\:text-red:hover {
+  color: var(--text-red-hover);
+}
+.hover\:text-red-2:hover {
+  color: var(--text-red-2-hover);
+}
+.hover\:text-green:hover {
+  color: var(--text-green-hover);
+}
+
+/* Backgrounds */
+
+.bg-yellow {
+  background-color: var(--bg-yellow);
+}
+.bg-yellow-1 {
+  background-color: var(--bg-yellow-1);
+}
+.bg-blue-5 {
+  background-color: var(--bg-blue-5);
+}
+.bg-green-1 {
+  background-color: var(--bg-green-1);
+}
+.bg-blue-1 {
+  background-color: var(--bg-blue-1);
+}
+
+.bg-gray-2 {
+  background-color: var(--bg-gray-2);
+}
+.bg-gray-1 {
+  background-color: var(--bg-gray-1);
+}
+.bg-purple {
+  background-color: var(--bg-purple);
+}
+.bg-red-2 {
+  background-color: var(--bg-red-2);
+}
+.bg-gray-5 {
+  background-color: var(--bg-gray-5);
+}
+.bg-white {
+  background-color: var(--bg-white);
+}
+.bg-red-3 {
+  background-color: var(--bg-red-3);
+}
+.bg-red {
+  background-color: var(--bg-red);
+}
+
+.bg-green {
+  background-color: var(--bg-green);
+}
+
+/* Text Colors */
+.text-gray {
+  color: var(--text-gray);
+}
+.text-gray-2 {
+  color: var(--text-gray-2);
+}
+.text-green {
+  color: var(--text-green);
+}
+.text-black {
+  color: var(--text-black);
+}
+.text-red {
+  color: var(--text-red);
+}
+.text-blue {
+  color: var(--text-blue);
+}
+
+.text-yellow {
+  color: var(--text-yellow);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+.text-purple {
+  color: var(--text-purple);
+}
+
+.text-pink {
+  color: var(--text-pink);
+}
+/* Borders */
+.border-black {
+  border-color: var(--border-black);
+}
+.border-red {
+  border-color: var(--border-red);
+}
+.border-gray {
+  border-color: var(--border-gray);
+}
+
+.border-white {
+  border-color: var(--border-white);
+}

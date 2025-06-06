@@ -1,0 +1,101 @@
+import React from "react";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { AiOutlineProject } from "react-icons/ai";
+import { BsJournalBookmark, BsFillLightningFill } from "react-icons/bs";
+import { MdCloudQueue } from "react-icons/md";
+
+const Module = () => {
+  return (
+    <div className="bg-white p-6 md:p-10 rounded-lg shadow-lg border border-gray max-w-7xl mx-auto">
+      {/* Header */}
+      <div className="flex items-center gap-3 text-xl font-semibold bg-black text-white px-3 py-2 rounded-lg w-fit">
+        <FaRegCalendarAlt className="text-yellow" />
+        <span>Module 1 - Duration: 4 Weeks</span>
+      </div>
+
+      {/* Title */}
+      <div className="mt-5 text-black">
+        <h2 className="text-2xl md:text-3xl font-bold">Cloud Computing Mastery</h2>
+        <p className="text-gray mt-2">
+          Learn the fundamentals of **Cloud Computing**, including AWS, Azure, and Google Cloud. 
+          Master cloud architecture, security, and deployment strategies to build scalable applications.
+        </p>
+      </div>
+
+      {/* Badges */}
+      <div className="flex flex-wrap gap-2 mt-4">
+        <span className="bg-blue-1 text-blue px-3 py-1 rounded-md text-sm flex items-center gap-2">
+          <BsFillLightningFill /> Live Workshops
+        </span>
+        <span className="bg-yellow-1 text-yellow px-3 py-1 rounded-md text-sm flex items-center gap-2">
+          <AiOutlineProject /> Hands-on Projects
+        </span>
+        <span className="bg-green-1 text-green px-3 py-1 rounded-md text-sm flex items-center gap-2">
+          <BsJournalBookmark /> Cloud Architecture & Security
+        </span>
+      </div>
+
+      {/* Weeks Section */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        {/* Week 1 */}
+        <div className="bg-gray-1 p-4 rounded-lg shadow">
+          <h3 className="text-lg font-bold bg-yellow text-white py-1 px-3 w-fit rounded-md">Week 1</h3>
+          <h4 className="text-xl font-semibold mt-3">Introduction to Cloud Computing</h4>
+          <ul className="text-gray mt-2 list-disc pl-5 text-sm">
+            <li>Cloud Computing Overview & Benefits</li>
+            <li>Types of Cloud Services: IaaS, PaaS, SaaS</li>
+            <li>Cloud Deployment Models: Public, Private, Hybrid</li>
+            <li>Getting Started with AWS, Azure, and Google Cloud</li>
+          </ul>
+        </div>
+
+        {/* Week 2 */}
+        <div className="bg-gray-1 p-4 rounded-lg shadow">
+          <h3 className="text-lg font-bold bg-yellow text-white py-1 px-3 w-fit rounded-md">Week 2</h3>
+          <h4 className="text-xl font-semibold mt-3">Cloud Services & Security</h4>
+          <ul className="text-gray mt-2 list-disc pl-5 text-sm">
+            <li>Storage Solutions: S3, Blob Storage, Google Cloud Storage</li>
+            <li>Compute Services: EC2, Azure VMs, Google Compute Engine</li>
+            <li>Identity & Access Management (IAM) in Cloud</li>
+            <li>Cloud Security Best Practices & Compliance</li>
+          </ul>
+        </div>
+
+        {/* Week 3 */}
+        <div className="bg-gray-1 p-4 rounded-lg shadow">
+          <h3 className="text-lg font-bold bg-yellow text-white py-1 px-3 w-fit rounded-md">Week 3</h3>
+          <h4 className="text-xl font-semibold mt-3">Cloud Deployment & DevOps</h4>
+          <ul className="text-gray mt-2 list-disc pl-5 text-sm">
+            <li>Serverless Computing & Containerization</li>
+            <li>CI/CD Pipelines in the Cloud</li>
+            <li>Infrastructure as Code (IaC) with Terraform</li>
+            <li>Monitoring & Logging in Cloud Environments</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Project Section */}
+      <div className="bg-gray-1 p-5 rounded-lg shadow mt-8 flex items-center gap-4">
+        <MdCloudQueue className="text-red text-5xl" />
+        <div>
+          <h3 className="text-xl font-semibold">Cloud Deployment Project</h3>
+          <p className="text-gray text-sm">
+            Deploy a **fully functional web application** using AWS, Azure, or Google Cloud, implementing cloud security, 
+            scalability, and automation techniques.
+          </p>
+        </div>
+      </div>
+
+      {/* Jam Session */}
+      <div className="bg-gray-1 p-5 rounded-lg shadow mt-6">
+        <h3 className="text-xl font-semibold">Advanced Cloud Computing Techniques</h3>
+        <p className="text-gray text-sm mt-2">
+          Explore cloud automation, multi-cloud strategies, and advanced deployment techniques 
+          to optimize cloud solutions for business needs.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Module;
